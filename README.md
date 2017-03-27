@@ -88,7 +88,7 @@ Then run following to visualize learn reward and value images.
 python vis.py --datafile learned_rewards_values_28x28.npz
 ```
 
-**NOTE: ** If you would like to produce GIF animation of value images on your own, the following command might be useful. 
+**NOTE:** If you would like to produce GIF animation of value images on your own, the following command might be useful. 
 
 ```bash
 convert -delay 20 -loop 0 *.png value_function.gif
