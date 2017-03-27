@@ -105,7 +105,7 @@ convert -delay 20 -loop 0 *.png value_function.gif
 
 Test Accuracy | 8x8 | 16x16 | 28x28
 -- | -- | -- | --
-PyTorch | 99.16% | 92.44% | 92.44% 
+PyTorch | 99.16% | 92.44% | 88.20% 
 [TensorFlow](https://github.com/zuoxingdong/VIN_TensorFlow) | 99.03% | 90.2% | 82%
 
 ### Speed with GPU
