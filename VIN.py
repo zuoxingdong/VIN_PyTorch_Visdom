@@ -74,8 +74,10 @@ class VIN(nn.Module):
         
         # Initialize value map (zero everywhere)
         v = torch.zeros(r.size())
+        # Move to GPU if necessary
+        v = v.cuda() if X.is_cuda else v
         # Wrap to autograd.Variable
-        v = Variable(v.cuda())
+        v = Variable(v)
         
         # K-iterations of Value Iteration module
         for _ in range(args.k):
